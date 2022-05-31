@@ -7,7 +7,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root,html,body {
+  height:100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.faucet {
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  
+}
+.faucet__container {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+.faucet__btn-container {
+  display: flex;
+  gap:20px;
+  margin-top:20px;
 }

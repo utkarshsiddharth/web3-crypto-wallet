@@ -20,8 +20,8 @@ contract Faucet is Owned, Logger, IFaucet {
 
     modifier limitWithdrawal(uint256 withdrawAmount) {
         require(
-            withdrawAmount < 2000000000000000000,
-            "withdraw amount should be less than 2 ether"
+            withdrawAmount <= 1000000000000000000,
+            "withdraw amount should be less than 1 ether"
         );
         _; // just like next() in express
     } // just like middleware
